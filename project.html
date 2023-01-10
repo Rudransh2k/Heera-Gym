@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heera Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Css reset -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(Images/abs-gb3b90f982_1920.jpg);
+            color: white;
+            /*the color of the content */
+            font-family:url("C:\Users\heera\Downloads\Seymour_One\SeymourOne-Regular.ttf");
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            /* it will change accordingly to the parent */
+            top: 20px;
+            left: 4px;
+
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 28%;
+            margin: 20px auto;
+           
+
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            /* it will change accordingly to the parent */
+            top: 20px;
+            right: 4px;
+            color: black;
+            margin: 11px;
+            font-family:url("C:\Users\heera\Downloads\Seymour_One\SeymourOne-Regular.ttf");
+        }
+
+        .mid li {
+            display: inline-block;
+            margin: 3px 4px;
+            padding: 4px;
+        }
+
+        .mid li a {
+            color: #ffffff;
+            font-size: 25px;
+            text-decoration: none;
+            margin: 4px;
+
+        }
+
+        .mid li a:hover,
+        .mid li a.active {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 55px;
+            text-align: center;
+        }
+
+        .btn {
+            /* border: red solid 4x; */
+            border-radius: 4px;
+            font-size: 24px;
+            margin: 2px 8px;
+            font-family:url("C:\Users\heera\Downloads\Seymour_One\SeymourOne-Regular.ttf") ;
+        }
+
+        .btn:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+        .container{
+            border: 4px solid #ffeb3b70;
+            width: 400px;
+            margin-top: 80px;
+            border-radius: 34px;
+        }
+        .container h1{
+            
+            display: block;
+            text-align: center;
+        
+        }
+       .form{
+        display: block;
+        text-align: center;
+        margin: 4px;
+       }
+        .container button{
+            display: block;
+            margin:2px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container button:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="images/kettlebell-g85c07c600_1920.jpg" alt="" class="logo">
+            <p class="logo">Heera Fitness</p>
+        </div>
+        <div class="mid">
+            <!-- left box for navbar -->
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for call to action -->
+            <button class="btn">Call us</button><button class="btn">Email</button>
+        </div>
+    </header>
+    <!-- this is the wrong way  -->
+    <div class="container">
+        <h1>Welcome to the best with the best trainers.</h1>
+        <form action="noaction.php" class="form">
+            <input type="text" placeholder="Enter ur name">
+        </form>
+    
+        
+        <form action="noaction.php" class="form">
+            <input type="text" placeholder="Enter ur Caste">
+        </form>
+ 
+
+      
+        <form action="noaction.php" class="form">
+            <input type="text" placeholder="Enter ur Gautr">
+        </form>
+   
+        <form action="noaction.php" class="form">
+            <input type="text" placeholder="Enter ur Gender">
+        </form>
+        <button>Submit</button>
+    </div>
+
+</body>
+
+</html>
